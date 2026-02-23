@@ -11,9 +11,16 @@
 
 body {
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* HEADER */
+main {
+  flex: 1;
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -22,6 +29,7 @@ body {
   background: black;
   color: white;
 }
+
 
 #menu-toggle {
   display: none;
@@ -60,15 +68,20 @@ body {
 
 .card {
   flex: 1;
-  background: orange;
-  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background: orange;
+  padding: 20px;
   font-size: 20px;
   border-radius: 30px;
   box-shadow: orange 0px 0px 10px 0.1px;
   transition: 0.3s ease;
-
+  display: flex; flex-direction: column;
 }
+
+.card-3 { order: -1; }
 
 /* 📱 MOBILE */
 @media (max-width: 900px) {
