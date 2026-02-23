@@ -135,9 +135,12 @@ body {
     background: linear-gradient(187deg, blue, rgb(40, 134, 211));
     box-shadow: blue 0px 0px 10px 0.1px;
     transition: 0.3s ease;
+    background-color: orange;
   }
 
   .card:active {
     transform: scale(0.95);
   }
 }
+
+
